@@ -1,0 +1,1 @@
+把资料文件直接放进本文件夹，然后在 data/manifest.js 里加一行即可（详见 README.md）

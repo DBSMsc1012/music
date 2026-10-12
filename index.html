@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="大白鲨音乐资料库 · 学员资料浏览">
+  <title>大白鲨音乐资料库</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 顶部栏 -->
+  <header class="topbar">
+    <div class="brand">
+      <img class="brand-logo" src="logo-small.png" alt="大白鲨音乐资料库">
+      <span class="brand-name">大白鲨音乐资料库</span>
+    </div>
+
+    <!-- 搜索框 -->
+    <div class="search-wrap">
+      <input type="text" id="searchInput" placeholder="搜索课名 / 资料名…" autocomplete="off">
+      <div class="search-dropdown" id="searchDropdown"></div>
+    </div>
+
+    <!-- 标签页 -->
+    <nav class="tabs">
+      <button class="tab active" data-tab="chapter">按章节</button>
+      <button class="tab" data-tab="material">按资料</button>
+      <button class="tab" data-tab="level">按水平</button>
+    </nav>
+  </header>
+
+  <!-- 主区域 -->
+  <main>
+    <!-- 按章节：三栏分栏浏览 -->
+    <section class="view active" id="chapterView">
+      <div class="columns">
+        <div class="col" id="colSubjects"></div>
+        <div class="col" id="colChapters"></div>
+        <div class="col" id="colFiles"></div>
+      </div>
+      <!-- 手机端路径条 -->
+      <div class="mobile-path" id="mobilePath"></div>
+    </section>
+
+    <!-- 按资料：建设中 -->
+    <section class="view coming-soon" id="materialView">
+      <div class="soon-box">
+        <h2>按资料 · 建设中</h2>
+        <p>敬请期待</p>
+      </div>
+    </section>
+
+    <!-- 按水平：建设中 -->
+    <section class="view coming-soon" id="levelView">
+      <div class="soon-box">
+        <h2>按水平 · 建设中</h2>
+        <p>敬请期待</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="studio">大白鲨音乐工作室</div>
+    <div>联系方式：待补充</div>
+    <div>© 2026 大白鲨音乐资料库 · 保留所有权利</div>
+  </footer>
+
+  <script src="data/manifest.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
